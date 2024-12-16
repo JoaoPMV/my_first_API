@@ -1,0 +1,9 @@
+Métodos dentro do sessionControler:
+
+index, show, update, store and destroy.
+
+index: listagem de sessões.
+store: Criar uma sessão.
+show: quando queremos listar uma única sessão.
+update: quando queremos alterar alguma sessão.
+destroy: quando queremos deletar uma sessão.

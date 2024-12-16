@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+
+<body>
+  <h2>Entre</h2>
+  <form action="/auth/login" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <hr>
+
+  <h2>Registre-se</h2>
+  <form action="/create" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Registrar</button>
+  </form>
+
+  <h2>Deletar Usuário</h2>
+  <form action="/auth/delete" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <button type="submit">Deletar</button>
+  </form>
+
+  <h2>Registrar animal</h2>
+  <form action="/createanimal" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="name of the animal">
+    <label for="animal">Animal:</label>
+    <input type="text" id="animal" name="animal" required placeholder="dog, cat or another animal">
+    <label for="gender">Gender:</label>
+    <input type="text" id="gender" name="gender" required placeholder="male or female">
+    <label for="size">Size:</label>
+    <input type="text" id="size" name="size" required placeholder="small, medium or big">
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" placeholder="the age of the animal">
+    <label for="age">Adopted:</label>
+    <input type="text" id="adopted" name="adopted" placeholder="the age of the animal">
+    <button type="submit">Registrar</button>
+  </form>
+</body>
+
+</html>
